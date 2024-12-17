@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Minecraft - Crossplay Java e Bedrock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            width: 90%;
+            margin: 2rem auto;
+            text-align: center;
+        }
+        .box {
+            margin: 1.5rem auto;
+            padding: 2rem;
+            border-radius: 12px;
+            background: #2c2c2c;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #66ffcc;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        .ip-address {
+            font-size: 1.4rem;
+            color: #66ff66;
+            font-weight: bold;
+        }
+        button {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background: #66ffcc;
+            color: #000;
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            background: #111;
+            color: #ccc;
+            padding: 1.2rem 0;
+            font-size: 1rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .responsive-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            margin: 1rem auto;
+        }
+        .vip-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .vip-card {
+            background: #222;
+            border: 2px solid #66ffcc;
+            border-radius: 12px;
+            padding: 1.5rem;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease;
+        }
+        .vip-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+        }
+        .vip-card h3 {
+            color: #66ffcc;
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+        }
+        .vip-card p {
+            font-size: 1rem;
+            color: #ddd;
+            margin-bottom: 1rem;
+        }
+        textarea.vip-info {
+            width: 100%;
+            height: 100px;
+            margin-top: 1rem;
+            border-radius: 8px;
+            border: 1px solid #3b82f6;
+            background: #2c2c2c;
+            color: #fff;
+            padding: 0.5rem;
+            resize: none;
+            outline: none;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Servidor Minecraft - Crossplay Java e Bedrock
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h2>Sobre o Servidor</h2>
+            <p>Junte-se ao nosso servidor de Minecraft onde jogadores das edições <strong>Java</strong> e <strong>Bedrock</strong> podem jogar juntos! Aventure-se com amigos em um mundo incrível e cheio de desafios. Servidor para todos os players!</p>
+        </div>
+
+        <div class="box">
+            <h2>Como Conectar</h2>
+            <p><strong>Java Edition:</strong></p>
+            <p class="ip-address">IP: SEUSERVIDOR.com:25565</p>
+            <p><strong>Bedrock Edition:</strong></p>
+            <p class="ip-address">IP: SEUSERVIDOR.com</p>
+            <p>Porta: 19132</p>
+        </div>
+
+        <div class="box">
+            <h2>Galeria</h2>
+            <img src="https://via.placeholder.com/600x300.png?text=Minecraft+World" alt="Galeria do Servidor" class="responsive-image">
+        </div>
+
+        <div class="box">
+            <h2>Junte-se Agora!</h2>
+            <p>Clique no botão abaixo para saber mais ou entrar em contato conosco nas redes sociais.</p>
+            <button onclick="alert('Convide seus amigos e divirta-se!')">Entre Agora!</button>
+        </div>
+
+        <div class="box">
+            <h2>Loja de Vips</h2>
+            <div class="vip-section">
+                <div class="vip-card">
+                    <h3>Vip Uranio</h3>
+                    <p>Acesso total ao servidor com benefícios exclusivos.</p>
+                    <button>Comprar</button>
+                    <textarea class="vip-info" placeholder="Digite mais informações sobre este VIP..."></textarea>
+                </div>
+                <div class="vip-card">
+                    <h3>Vip Platina</h3>
+                    <p>Benefícios avançados para o melhor gameplay.</p>
+                    <button>Comprar</button>
+                    <textarea class="vip-info" placeholder="Digite mais informações sobre este VIP..."></textarea>
+                </div>
+                <div class="vip-card">
+                    <h3>Vip Ferro</h3>
+                    <p>Recursos adicionais para iniciantes.</p>
+                    <button>Comprar</button>
+                    <textarea class="vip-info" placeholder="Digite mais informações sobre este VIP..."></textarea>
+                </div>
+                <div class="vip-card">
+                    <h3>Vip Bronze</h3>
+                    <p>Uma introdução com bônus simples.</p>
+                    <button>Comprar</button>
+                    <textarea class="vip-info" placeholder="Digite mais informações sobre este VIP..."></textarea>
+                </div>
+                <div class="vip-card">
+                    <h3>Vip Bismuto</h3>
+                    <p>Um pacote exclusivo com surpresas únicas.</p>
+                    <button>Comprar</button>
+                    <textarea class="vip-info" placeholder="Digite mais informações sobre este VIP..."></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Servidor Minecraft Crossplay | Desenvolvido por [Seu Nome]
+    </footer>
+</body>
+</html>
